@@ -13,60 +13,60 @@
 *
 
 
-* write out a code example of each explanation above
-*/
+// * write out a code example of each explanation above
+// */
 
-// Principle 1
+// // Principle 1
 
-            // code example for Window Binding
-            'use strict';
-            function ghost(){
-            console.log(this.boo);
-            }
+//             // code example for Window Binding
+//             'use strict';
+//             function ghost(){
+//             console.log(this.boo);
+//             }
 
-            const boo = "👻";
+//             const boo = "👻";
 
-            ghost();
-            console.log(this);
-// Principle 2
+//             ghost();
+//             console.log(this);
+// // Principle 2
 
-// code example for Implicit Binding
-
-
-            // let myGhost = {
-            //   name: 'Casper',
-            //   boo: 'boo👻👻',
-            //   ghost: function(){
-            //     console.log(this.boo);
-            //   }
-            //   }
-            myGhost.ghost();//invoking function here object to the left represents 'this'
+// // code example for Implicit Binding
 
 
-            // Principle 3
-
-// code example for New Binding
-
-
-            //  function food(favorite){
-               this.food = favorite; // <- this points to the new keyword when the fucntion is called
-            //  }
-            let myFavouriteFood = new food('Bacon'); // New binding example.
-
-            //   console.log(`My favourite food is ${myFavouriteFood.food}`);
+//             // let myGhost = {
+//             //   name: 'Casper',
+//             //   boo: 'boo👻👻',
+//             //   ghost: function(){
+//             //     console.log(this.boo);
+//             //   }
+//             //   }
+//             myGhost.ghost();//invoking function here object to the left represents 'this'
 
 
-// Principle 4
+//             // Principle 3
 
-// code example for Explicit Binding
+// // code example for New Binding
 
-            // function ghost(){
-            // console.log(this.boo);
-            // }
-            // let myGhost ={
-            //   name: 'Capser',
-            //   boo: 'ahhhhhhhhhhh🙀🙀',
-            // }
-            friendlyGhost = ghost.bind(myGhost) // example of explict binding 
 
-            // friendlyGhost();
+//             //  function food(favorite){
+//                this.food = favorite; // <- this points to the new keyword when the fucntion is called
+//             //  }
+//             let myFavouriteFood = new food('Bacon'); // New binding example.
+
+//             //   console.log(`My favourite food is ${myFavouriteFood.food}`);
+
+
+// // Principle 4
+
+// // code example for Explicit Binding
+
+//             // function ghost(){
+//             // console.log(this.boo);
+//             // }
+//             // let myGhost ={
+//             //   name: 'Capser',
+//             //   boo: 'ahhhhhhhhhhh🙀🙀',
+//             // }
+//             friendlyGhost = ghost.bind(myGhost) // example of explict binding 
+
+//             // friendlyGhost();
